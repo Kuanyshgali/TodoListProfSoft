@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list</title>
+</head>
+<body>
+
+<div class="container">
+    <form action="#" class="container__module" id="form">
+        <h1 class="container__title">Todo List</h1>
+        <div class="container__middle">
+            <textarea class="container__insert" placeholder="Add note" autofocus cols="50" wrap="hard"></textarea>
+            <button type="submit" class="container__sub" id="submit">Add</button>
+        </div>
+        <ul class="container__list">
+        </ul>
+    </form>
+    <template id="todo-template" class="todo-li">
+        <li>
+            <span class="todo-li__text"></span>
+            <button class="todo-li__close">+</button>
+        </li>
+    </template>
+</div>
+</body>
+</html>

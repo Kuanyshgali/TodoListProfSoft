@@ -1,0 +1,104 @@
+@import "nuller.scss";
+
+@font-face {
+  font-family: 'Conv_QwitcherGrypen-Bold';
+  src: url('../fonts/QwitcherGrypen-Bold.eot');
+  src: local('☺'), url('../fonts/QwitcherGrypen-Bold.woff') format('woff'), url('../fonts/QwitcherGrypen-Bold.ttf') format('truetype'), url('../fonts/QwitcherGrypen-Bold.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  font-family: Conv_QwitcherGrypen-Bold, sans-serif;
+  font-size: 30px;
+}
+
+.container{
+  position: absolute;
+  inset: 0;
+  background: rosybrown;
+
+  &__middle{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  &__title{
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-weight: 900;
+
+  }
+
+  &__insert{
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    font-size: 30px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 1),
+    -23px 0 20px -23px rgba(0, 0, 0, .8),
+    23px 0 20px -23px rgba(0, 0, 0, .8),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    border-radius: 10px 0 10px 0;
+  }
+
+  &__sub{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px 0 10px 0;
+    background: chocolate;
+    color: white;
+    margin-left: 10px;
+    transition-duration: 0.3s;
+  }
+
+  &__sub:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    scale: 1.1;
+  }
+
+  &__module{
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    right: initial;
+    bottom: initial;
+    transform: translate(-50%, -50%);
+    background: antiquewhite;
+    border-radius: 10px 0 10px 0;
+  }
+
+  &__list li{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.todo-li{
+  &__close{
+    font-size: 50px;
+    padding-right: 30px;
+    width: 23px;
+    height: 23px;
+    margin-left: 20px;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    background: transparent;
+    color: chocolate;
+    transition-duration: 0.3s;
+    text-align: center;
+  }
+
+  &__text{
+    width: 80%;
+  }
+
+  &__close:hover{
+    cursor: pointer;
+    opacity: 0.9;
+    scale: 1.1;
+  }
+}
